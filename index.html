@@ -12,6 +12,73 @@
       <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
     </head>
     <body>
-      <h1>Browser Template</h1>
+      <h1>My Travelgram</h1>
+      <br>
+      <form id='sign-up'>
+          <legend>Sign-up</legend>
+          <input type="email" name="credentials[email]" placeholder='Enter email...' class='emailempty'>
+          <input type="password" name="credentials[password]" placeholder='Enter password' class='passwordempty'>
+          <input type="password" name="credentials[password_confirmation]" placeholder='Enter password again' class='passwordempty'>
+          <button class="signUpButton">Sign up</button>
+        </form>
+        <h2 id="message"></h2>
+        <br>
+  <form id='sign-in'>
+    <legend>Sign-in</legend>
+    <input type="email"name="credentials[email]" placeholder='Enter email...' class='emailempty'>
+    <input type="password"name="credentials[password]" placeholder='Enter password' class='passwordempty'>
+    <button class="signInButton">Sign in</button>
+    <br />
+  </form>
+  <form id="change-password" class="border">
+    <fieldset>
+      <legend>Change Password</legend>
+      <input type="password" name="passwords[old]" placeholder="Old Password" class='passwordempty'>
+      <input type="password" name="passwords[new]" placeholder="New Password" class='passwordempty'>
+      <input type="submit" value="Change Password">
+    </fieldset>
+  </form>
+  <br>
+
+  <form id='sign-out'>
+      <legend>Sign-out</legend>
+      <button>Sign out</button>
+    </form>
+    <br>
+    <form id ='create-flight'>
+      <legend>Let's create a flight</legend>
+      <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='placeempty'>
+      <input type="date" name="credentials[date]" placeholder='Enter date' class='dateempty'>
+      <input type= "description"name="credentials[description]" placeholder='Enter your description' class='descriptionempty'>
+      <button>Create flight</button>
+      </form>
+<br>
+<form id = 'update-flight'>
+  <legend>Update a flight</legend>
+  <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='placeempty'>
+  <input type="date" name="credentials[date]" placeholder='Enter date' class='dateempty'>
+  <input type= "description"name="credentials[description]" placeholder='Enter your description' class='descriptionempty'>
+  <input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
+  <button>Update flight</button>
+</form>
+<br>
+<form id = 'delete-flight'>
+  <legend>Delete a flight</legend>
+<input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
+<button>Delete flight</button>
+</form>
+<br>
+<form id = 'show-flight'>
+  <legend>Show a flight</legend>
+<input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
+<button>Show a flight</button>
+</form>
+<br>
+<form id='show-flights'>
+    <legend>Show flights</legend>
+    <button>Show flights</button>
+  </form>
+  <br>
+  <br>
     </body>
 </html>
