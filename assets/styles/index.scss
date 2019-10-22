@@ -11,10 +11,44 @@
 
 p{
   text-align: center;
-  font-size: 20 px;
+  font-size: 21px;
   font-family: serif;
   font-weight: normal;
   font-style: italic;
+  &.allFlights{
+      background-color: white;
+      opacity: 0.5;
+      width: 50%;
+      font-weight: bolder;
+      line-height: 2;
+      font-size: 18px;
+      margin:0 auto;
+
+    }
+}
+
+button {
+background-color: #e0c9ff;
+letter-spacing: 2px;
+    font-size: 12px;
+    padding: 10px 30px;
+    border-radius: 5px;
+    border: 1px solid rgba(0,0,0,0.3);
+    border-bottom-width: 3px;
+}
+
+button:hover {
+       background-color: #e3e3e3;
+       border-color: rgba(0,0,0,0.5);
+   }
+
+   button:active {
+       background-color: #CCC;
+       border-color: rgba(0,0,0,0.9);
+   }
+
+.sign {
+background-color: #c1ed68;
 }
 body{
   background-image: url(https://www.cegepsth.qc.ca/wp-content/uploads/2016/06/sc_nature.jpg);

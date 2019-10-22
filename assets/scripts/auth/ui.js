@@ -1,5 +1,10 @@
 const store = require('../store')
 
+
+const cssPage = function ()
+{
+$('body').css('background-image', 'url(clouds.jpeg)')
+}
 const successMessage = function (newText) {
   $('#message').text(newText)
   $('#message').removeClass('failure')
@@ -26,6 +31,7 @@ const onSignInSuccess = function (responseData) {
   $('#get-flight').show()
   $('#get-flights').show()
   $('#delete-flight').show()
+  cssPage()
 }
 const onSignInFailure = function () {
   failureMessage('Sign in failed!')

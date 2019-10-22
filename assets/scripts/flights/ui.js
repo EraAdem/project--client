@@ -94,9 +94,9 @@ const onGetFlightsFailure = function () {
 const onGetFlightSuccess = function (data) {
   // console.log(data)
   $('.oneFlight').text(' ')
-  $('.oneFlight').append('ID: ' + data.flight.id + ' ' + 'Name: ' + 'Description: ' + data.flight.description)
+  $('.oneFlight').append('ID: ' + data.flight.id + ' ' + 'Place: ' + 'Description: ' + data.flight.description)
   successMessageGetFlight('Showing Flight ')
-  $('.clearText').val('')
+  $('.clearForm').val('')
 }
 const onGetFlightFailure = function () {
   failureMessageGetFlight('Cannot Show Flight')
