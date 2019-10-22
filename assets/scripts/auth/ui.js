@@ -1,8 +1,6 @@
 const store = require('../store')
 
-
-const cssPage = function ()
-{
+const cssPage = function () {
 $('body').css('background-image', 'url(clouds.jpeg)')
 }
 const successMessage = function (newText) {
