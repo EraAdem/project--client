@@ -14,27 +14,31 @@
     <body>
       <h1>My Travelgram</h1>
       <br>
+      <p> <strong>Welcome to Glam Travelgram!<strong> <br>
+        Let's find some beautiful place to get lost in!<br>
+        And don't forget: "Travel broadens the mind!" </p>
+      <br>
       <form id='sign-up'>
           <legend>Sign-up</legend>
-          <input type="email" name="credentials[email]" placeholder='Enter email...' class='emailempty'>
-          <input type="password" name="credentials[password]" placeholder='Enter password' class='passwordempty'>
-          <input type="password" name="credentials[password_confirmation]" placeholder='Enter password again' class='passwordempty'>
+          <input type="email" name="credentials[email]" placeholder='Enter email...' class='clearForm'>
+          <input type="password" name="credentials[password]" placeholder='Enter password' class='clearForm'>
+          <input type="password" name="credentials[password_confirmation]" placeholder='Enter password again' class='clearForm'>
           <button class="signUpButton">Sign up</button>
         </form>
         <h2 id="message"></h2>
         <br>
   <form id='sign-in'>
     <legend>Sign-in</legend>
-    <input type="email"name="credentials[email]" placeholder='Enter email...' class='emailempty'>
-    <input type="password"name="credentials[password]" placeholder='Enter password' class='passwordempty'>
+    <input type="email"name="credentials[email]" placeholder='Enter email...' class='clearForm'>
+    <input type="password"name="credentials[password]" placeholder='Enter password' class='clearForm'>
     <button class="signInButton">Sign in</button>
     <br />
   </form>
   <form id="change-password" class="border">
     <fieldset>
       <legend>Change Password</legend>
-      <input type="password" name="passwords[old]" placeholder="Old Password" class='passwordempty'>
-      <input type="password" name="passwords[new]" placeholder="New Password" class='passwordempty'>
+      <input type="password" name="passwords[old]" placeholder="Old Password" class='clearForm'>
+      <input type="password" name="passwords[new]" placeholder="New Password" class='clearForm'>
       <input type="submit" value="Change Password">
     </fieldset>
   </form>
@@ -47,36 +51,43 @@
     <br>
     <form id ='create-flight'>
       <legend>Let's create a flight</legend>
-      <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='placeempty'>
-      <input type="date" name="credentials[date]" placeholder='Enter date' class='dateempty'>
-      <input type= "description"name="credentials[description]" placeholder='Enter your description' class='descriptionempty'>
-      <button>Create flight</button>
+      <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='clearForm'>
+      <input type="date" name="credentials[date]" placeholder='Enter date' class='clearForm'>
+      <input type= "description"name="credentials[description]" placeholder='Enter your description' class='clearForm'>
+      <button id="createFlight">Create</button>
       </form>
+      <h2 id="create-message"></h2>
+
 <br>
 <form id = 'update-flight'>
   <legend>Update a flight</legend>
-  <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='placeempty'>
-  <input type="date" name="credentials[date]" placeholder='Enter date' class='dateempty'>
-  <input type= "description"name="credentials[description]" placeholder='Enter your description' class='descriptionempty'>
-  <input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
-  <button>Update flight</button>
+  <input type="place"name="flight[place]" placeholder='Enter your favorite place...' class='clearForm'>
+  <input type="date" name="flight[date]" placeholder='Enter date' class='clearForm'>
+  <input type= "description"name="flight[description]" placeholder='Enter your description' class='clearForm'>
+  <input type="id"name="flight[id]" placeholder='Enter your id' class='clearForm'>
+  <button id="update">Update</button>
 </form>
+<h2 id="update-message"></h2>
 <br>
 <form id = 'delete-flight'>
   <legend>Delete a flight</legend>
-<input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
-<button>Delete flight</button>
+<input type="text"name="credentials[id]" placeholder='Enter your id' class='clearForm'>
+<button id="deleteFlight">Delete</button>
 </form>
+<h2 id="delete-message"></h2
 <br>
-<form id = 'show-flight'>
-  <legend>Show a flight</legend>
-<input type="id"name="credentials[id]" placeholder='Enter your id' class='idempty'>
-<button>Show a flight</button>
+<form id='get-flight'>
+  <legend>Get a flight</legend>
+  <input  type="text" name="flight[id]" placeholder='Enter your id' class='clearForm'>
+  <button type="submit">Get a flight</button>
 </form>
+<h2 id="get-flight-message"></h2>
+<p class="oneFlight">
 <br>
-<form id='show-flights'>
-    <legend>Show flights</legend>
-    <button>Show flights</button>
+<form id='get-flights'>
+    <legend>Get flights</legend>
+    <button>Get flights</button>
+    <p class="allFlights">
   </form>
   <br>
   <br>
