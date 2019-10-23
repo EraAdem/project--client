@@ -2,7 +2,7 @@
 
 let apiUrl
 const apiUrls = {
-  production: 'https://dashboard.heroku.com/apps/still-journey-83123',
+  production: 'https://still-journey-83123.herokuapp.com',
   development: 'http://localhost:4741'
 }
 
