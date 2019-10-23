@@ -1,9 +1,9 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Project-2-api-client / My Travelgram
- [API]( https://still-journey-83123.herokuapp.com/)
+ [API]( https://still-journey-83123.herokuapp.com/)[Website]( https://eraadem.github.io/project_2_client/)
 
-   #### *  Welcome to my Travelgram * ####
+   #### Welcome to my Travelgram! ####
 
 This project is a a great combination of my passions, coding and traveling. I decided to call this app "My Travelgram". After sign-in, you can create your flight by entering the place you  visited, date when you visited the place and a short description of the place. You can also update the flight ,delete the flight by user id and you can get the flight you want or you can get all the flights.
 
