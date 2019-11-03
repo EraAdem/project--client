@@ -26,6 +26,16 @@ const successMessageGetFlight = function (newText) {
   $('#get-flight-message').removeClass('failure')
   $('#get-flight-message').addClass('success')
 }
+const successMessageChangePassword = function (newText) {
+  $('#change-password').text(newText).hide(2000).show().hide(2000)
+  $('#change-password').removeClass('failure')
+  $('#change-password').addClass('success')
+}
+const failureMessageChangePassword = function (newText) {
+  $('#change-password').text(newText).hide(2000).show().hide(2000)
+  $('#change-password').removeClass('success')
+  $('#change-password').addClass('failure')
+}
 const failureMessage = function (newText) {
   $('#message').text(newText).hide(2000).show().hide(2000)
   $('#message').removeClass('success')
@@ -78,9 +88,17 @@ const onUpdateFlightFailure = function () {
   failureMessageUpdate('Updated Unsuccessfully!')
   $('.clearForm').val('')
 }
+const onChangePasswordSuccess = function () {
+  successMessageChangePassword('Changed Password Successfully!')
+  $('.clearForm').val('')
+}
+const onChangePasswordFailure = function () {
+  failureMessageChangePassword('Changed Password Unsuccessfully!')
+  $('.clearForm').val('')
+}
 
 const onGetFlightsSuccess = function (data) {
-  console.log(data.flights)
+  // console.log(data.flights)
   $('.allFlights').text(' ')
   data.flights.forEach(function (flight) {
     $('.allFlights').append('<li>' + 'ID: ' + flight.id + ' ' + ' Place: ' + flight.place + ' Date: ' + flight.date + ' Description: ' + flight.description + '</li>')
@@ -113,5 +131,7 @@ module.exports = {
   onDeleteFlightSuccess,
   onDeleteFlightFailure,
   onUpdateFlightSuccess,
-  onUpdateFlightFailure
+  onUpdateFlightFailure,
+  onChangePasswordFailure,
+  onChangePasswordSuccess
 }

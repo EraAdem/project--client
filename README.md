@@ -1,7 +1,7 @@
 [![General Assembly Logo](https://camo.githubusercontent.com/1a91b05b8f4d44b5bbfb83abac2b0996d8e26c92/687474703a2f2f692e696d6775722e636f6d2f6b6538555354712e706e67)](https://generalassemb.ly/education/web-development-immersive)
 
 # Project-2-api-client / My Travelgram
- [API]( https://still-journey-83123.herokuapp.com/)[Website]( https://eraadem.github.io/project_2_client/)
+ [Deployed API]( https://still-journey-83123.herokuapp.com/)[Backend Github link]( https://github.com/EraAdem/project_2_api)
 
    #### Welcome to my Travelgram! ####
 
@@ -31,11 +31,14 @@ After creating Flights table (Ruby on Rails), I tested CRUD actions via cURL and
 4. CSS
 5. AJAX
 
-# Wireframe
+## Wireframe
 
 https://imgur.com/a/Obpim3M
 
 
+## Future Iterations
+
+In my future iterations I would like  to hide certain content when the user goes to do other things and I would like to grow the design.
 
 ## [License](LICENSE)
 

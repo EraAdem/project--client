@@ -3,7 +3,7 @@ const store = require('../store.js')
 const getFormFields = require('../../../lib/get-form-fields.js')
 
 const createFlight = function (formData) {
-  console.log(formData.credentials.place)
+//  console.log(formData.credentials.place)
   return $.ajax({
     method: 'POST',
     url: config.apiUrl + '/flights',
