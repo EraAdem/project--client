@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+    <head>
+      <title>My Travelgram</title>
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+
+      <!-- Do not add `link` tags-->
+      <link rel="shortcut icon" type="image/x-icon" href="favicon.ico">
+
+      <!-- Do not add `script` tags-->
+      <script src="public/vendor.js" type="text/javascript" charset="utf-8" defer></script>
+      <script src="public/application.js" type="text/javascript" charset="utf-8" defer></script>
+    </head>
+    <body>
+      <h1>My Travelgram</h1>
+      <br>
+      <p> <strong>Welcome to Glam Travelgram!<strong> <br>
+        Let's find some beautiful place to get lost in!<br>
+        And don't forget: "Travel broadens the mind!" </p>
+      <br>
+      <form id='sign-up'>
+          <legend>Sign-up</legend>
+          <input type="email" name="credentials[email]" placeholder='Enter email...' class='clearForm'>
+          <input type="password" name="credentials[password]" placeholder='Enter password' class='clearForm'>
+          <input type="password" name="credentials[password_confirmation]" placeholder='Enter password again' class='clearForm'>
+          <button class="signUpButton sign">Sign up</button>
+        </form>
+        <h2 id="message"></h2>
+        <br>
+  <form id='sign-in'>
+    <legend>Sign-in</legend>
+    <input type="email"name="credentials[email]" placeholder='Enter email...' class='clearForm'>
+    <input type="password"name="credentials[password]" placeholder='Enter password' class='clearForm'>
+    <button class="signInButton sign">Sign in</button>
+    <br />
+  </form>
+  <form id="change-password" class="border">
+    <fieldset>
+
+      <input type="password" name="passwords[old]" placeholder="Old Password" class='clearForm'>
+      <input type="password" name="passwords[new]" placeholder="New Password" class='clearForm'>
+
+      <button>Change Password</button>
+    </fieldset>
+  </form>
+  <br>
+
+  <form id='sign-out'>
+      <legend>Sign-out</legend>
+      <button>Sign out</button>
+    </form>
+    <br>
+    <form id ='create-flight'>
+      <legend>Let's create a flight</legend>
+      <input type="place"name="credentials[place]" placeholder='Enter your favorite place...' class='clearForm'>
+      <input type="date" name="credentials[date]" placeholder='Enter date' class='clearForm'>
+      <input type= "description"name="credentials[description]" placeholder='Enter your description' class='clearForm'>
+      <button id="createFlight">Create</button>
+      </form>
+      <h2 id="create-message"></h2>
+
+<br>
+<form id = 'update-flight'>
+  <legend>Update a flight</legend>
+  <input type="place"name="flight[place]" placeholder='Enter your favorite place...' class='clearForm'>
+  <input type="date" name="flight[date]" placeholder='Enter date' class='clearForm'>
+  <input type= "description"name="flight[description]" placeholder='Enter your description' class='clearForm'>
+  <input type="id"name="flight[id]" placeholder='Enter your id' class='clearForm'>
+  <button id="update">Update</button>
+</form>
+<h2 id="update-message"></h2>
+<br>
+<form id = 'delete-flight'>
+  <legend>Delete a flight</legend>
+<input type="text"name="credentials[id]" placeholder='Enter your id' class='clearForm'>
+<button id="deleteFlight">Delete</button>
+</form>
+<h2 id="delete-message"></h2
+<br>
+<form id='get-flight'>
+  <legend>Get a flight</legend>
+  <input  type="text" name="flight[id]" placeholder='Enter your id' class='clearForm'>
+  <button type="submit">Get a flight</button>
+</form>
+<h2 id="get-flight-message"></h2>
+<p class="oneFlight">
+<br>
+<form id='get-flights'>
+    <legend>Get flights</legend>
+    <button>Get flights</button>
+    <p class="allFlights">
+  </form>
+  <br>
+  <br>
+    </body>
+</html>
